@@ -10,3 +10,16 @@
 Пример:
 Исходный массив: [8, 3, 15, 6, 4, 2], результат: [0, 3, 4, 5]
 """
+
+""" В одну строку что-то не сообразил как сделать))"""
+import random
+
+a = [random.randint(0, 99) for _ in range(10)]
+print(f'Первый массив {a}')
+index_even = []
+
+for n in a:
+    if n % 2 == 0:
+        index_even.append(a.index(n))
+
+print(f'Индексы чётных элементов первого массива: {index_even}')

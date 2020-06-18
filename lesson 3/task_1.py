@@ -14,3 +14,12 @@
 В диапазоне 2-99: 12 чисел кратны 8
 В диапазоне 2-99: 11 чисел кратны 9
 """
+result = {}
+for a in range(2, 10):
+    result[a] = []
+    for f in range(2, 100):
+        if f % a == 0:
+            result[a].append(f)
+    print(
+        f'Для числа {a} кратны - {len(result[a])}. Кратные числа: {result[a]}.'
+        )
